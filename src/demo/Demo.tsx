@@ -2,6 +2,10 @@ import * as React from 'react'
 import uuid from 'nanoid'
 
 import { Select } from '../rss/components/Select'
+import '../rss/components/Select/Select.scss'
+
+// import { Select } from '@gargrave/react-simple-select'
+// import '@gargrave/react-simple-select/dist/react-simple-select.css'
 
 import styles from './Demo.module.scss'
 
@@ -13,8 +17,11 @@ type Color = {
 
 const colorOptions: Color[] = [
   { id: uuid(), hash: 'red', label: 'Red' },
+  { id: uuid(), hash: 'orange', label: 'Orange' },
+  { id: uuid(), hash: 'yellow', label: 'Yellow' },
   { id: uuid(), hash: 'green', label: 'Green' },
   { id: uuid(), hash: 'blue', label: 'Blue' },
+  { id: uuid(), hash: 'violet', label: 'Violet' },
 ]
 
 const getColorKey = (color: Color) => color.id

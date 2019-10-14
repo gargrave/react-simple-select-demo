@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Demo } from './demo'
 
-import './rss/components/Select/Select.scss'
 import styles from './App.module.scss'
 
 const App: React.FC = () => {
