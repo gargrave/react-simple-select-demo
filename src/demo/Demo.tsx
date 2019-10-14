@@ -1,24 +1,47 @@
 import * as React from 'react'
+import uuid from 'nanoid'
 
 import { Select } from '../rss/components/Select'
 
 import styles from './Demo.module.scss'
 
-const options = ['red', 'green', 'yellow', 'blue']
+type Color = {
+  id: string
+  hash: string
+  label: string
+}
+
+const colorOptions: Color[] = [
+  { id: uuid(), hash: 'red', label: 'Red' },
+  { id: uuid(), hash: 'green', label: 'Green' },
+  { id: uuid(), hash: 'blue', label: 'Blue' },
+]
+
+const getColorKey = (color: Color) => color.id
+const getColorLabel = (color: Color) => `Color: ${color.label}`
+const getColorValue = (color: Color) => color && color.hash
 
 export type DemoProps = {}
 
 export const Demo: React.FC<DemoProps> = () => {
   const [selected, setSelected] = React.useState()
 
-  const handleChange = option => {
-    setSelected(option)
+  const handleChange = (color: Color) => {
+    console.table(color)
+    setSelected(color)
   }
 
   return (
     <div>
       <div className={styles.sectionTitle}>A basic RSS setup:</div>
-      <Select onChange={handleChange} options={options} value={selected} />
+      <Select
+        getOptionKey={getColorKey}
+        getOptionLabel={getColorLabel}
+        getOptionValue={getColorValue}
+        onChange={handleChange}
+        options={colorOptions}
+        value={selected}
+      />
     </div>
   )
 }
