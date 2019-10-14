@@ -42,7 +42,6 @@ export const Select: React.FC<SelectProps> = memo(props => {
     placeholder = DEFAULT_PLACEHOLDER,
     value,
   } = props
-  console.log(`Select -> render()`)
 
   const [state, dispatch] = React.useReducer(
     reducer,
