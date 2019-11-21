@@ -1,11 +1,8 @@
 import * as React from 'react'
 import uuid from 'nanoid'
 
-import { Select } from '../rss/components/Select'
-import '../rss/components/Select/Select.scss'
-
-// import { Select } from '@gargrave/react-simple-select'
-// import '@gargrave/react-simple-select/dist/react-simple-select.css'
+import { Select } from '@gargrave/react-simple-select'
+import '@gargrave/react-simple-select/dist/react-simple-select.css'
 
 import styles from './Demo.module.scss'
 

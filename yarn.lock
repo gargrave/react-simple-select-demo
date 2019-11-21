@@ -998,10 +998,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
   integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
 
-"@gargrave/react-simple-select@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@gargrave/react-simple-select/-/react-simple-select-0.1.2.tgz#97759d46b4181057b8c296fde44492abd8a4a7a3"
-  integrity sha512-/VjiiabXjvvXmHgWYDRsEZiqae8CUSblk96qhWDBoUqzlKgySrvR4UxcQIRzVgSDlX6joQlE046etmsq3TB+UA==
+"@gargrave/react-simple-select@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@gargrave/react-simple-select/-/react-simple-select-0.1.5.tgz#808c0c17584dd2598086357a071e6727ee61547b"
+  integrity sha512-+bg91+5iEwesSFdkOmOJKFnlgQte1m5U//gs6Lhrm/LCrKor5VuKFhip8IJTVbYxwiSZU4imxTfZdSBJwuyF8Q==
 
 "@hapi/address@2.x.x":
   version "2.0.0"
