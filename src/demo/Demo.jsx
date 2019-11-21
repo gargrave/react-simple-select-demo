@@ -6,13 +6,7 @@ import '@gargrave/react-simple-select/dist/react-simple-select.css'
 
 import styles from './Demo.module.scss'
 
-type Color = {
-  id: string
-  hash: string
-  label: string
-}
-
-const colorOptions: Color[] = [
+const colorOptions = [
   { id: uuid(), hash: 'red', label: 'Red' },
   { id: uuid(), hash: 'orange', label: 'Orange' },
   { id: uuid(), hash: 'yellow', label: 'Yellow' },
@@ -21,16 +15,14 @@ const colorOptions: Color[] = [
   { id: uuid(), hash: 'violet', label: 'Violet' },
 ]
 
-const getColorKey = (color: Color) => color.id
-const getColorLabel = (color: Color) => `Color: ${color.label}`
-const getColorValue = (color: Color) => color && color.hash
+const getColorKey = color => color.id
+const getColorLabel = color => `Color :: ${color.label}`
+const getColorValue = color => color && color.hash
 
-export type DemoProps = {}
-
-export const Demo: React.FC<DemoProps> = () => {
+export const Demo = () => {
   const [selected, setSelected] = React.useState()
 
-  const handleChange = (color: Color) => {
+  const handleChange = color => {
     console.table(color)
     setSelected(color)
   }

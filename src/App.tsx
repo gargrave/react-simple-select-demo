@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Demo } from './demo'
+import { Demo, DemoTS } from './demo'
 
 import styles from './App.module.scss'
 
@@ -12,6 +12,8 @@ const App: React.FC = () => {
           This is the react-simple-select demo app.
         </h1>
         <Demo />
+        <br />
+        <DemoTS />
       </main>
     </div>
   )
